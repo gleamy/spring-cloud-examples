@@ -1,5 +1,6 @@
 package com.bens.spring.cloud.examples.eureka.client2;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
@@ -15,9 +16,12 @@ public class EurekaClient2Application {
         SpringApplication.run(EurekaClient2Application.class, args);
     }
 
+    @Value("${server.port}")
+    String serverPort;
+
     @RequestMapping("/hello")
     public String home() {
-        return "hello, I'm Eureka client2";
+        return "hello, I'm Eureka client2, Server port is " + serverPort;
     }
 }
 
