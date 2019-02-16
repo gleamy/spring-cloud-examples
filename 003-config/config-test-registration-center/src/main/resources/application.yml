@@ -9,9 +9,9 @@ eureka:
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-# 閫氳繃eureka.client.registerWithEureka锛歠alse鍜宖etchRegistry锛歠alse鏉ヨ〃鏄庤嚜宸辨槸涓�涓猠ureka server.
+# 通过eureka.client.registerWithEureka：false和fetchRegistry：false来表明自己是一个eureka server.
 
 
 spring:
   application:
-    name: eurka-server2
+    name: config-test-registration-center
