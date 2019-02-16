@@ -1,0 +1,21 @@
+
+server:
+  port: 8095
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8091/eureka
+
+spring:
+  application:
+    name: spring-cloud-config-client
+
+  cloud:
+    config:
+      name: bens-config
+      profile: dev
+      label: master
+      discovery:
+        enabled: true
+        service-id: spring-cloud-config-server
