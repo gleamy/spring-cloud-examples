@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: bens-cloud-admin-server
+server:
+  port: 8100

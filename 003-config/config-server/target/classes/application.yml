@@ -1,0 +1,19 @@
+server:
+  port: 8092
+
+spring:
+  application:
+    name: spring-cloud-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/gleamy/spring-cloud-examples.git      # ����git�ֿ�ĵ�ַ
+          search-paths: 003-config/config-repo                          # git�ֿ��ַ�µ���Ե�ַ���������ö������,�ָ
+          # username: username                                            # git�ֿ���˺�
+          # password: password                                            # git�ֿ������
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8091/eureka/   ## ע������eurka��ַ

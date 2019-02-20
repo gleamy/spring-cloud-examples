@@ -1,0 +1,26 @@
+
+server:
+  port: 8095
+
+spring:
+  application:
+    name: spring-cloud-config-client
+
+info:
+  head: head
+  body: body
+management:
+  endpoints:
+    web:
+      exposure:
+        #�������еĶ˵㣬Ĭ��ֻ������info��health
+        include: '*'
+  endpoint:
+    refresh:
+      enabled: true
+    health:
+      show-details: always
+    #���Թر�ָ���Ķ˵�
+    shutdown:
+      enabled: false
+
