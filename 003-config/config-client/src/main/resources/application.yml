@@ -13,14 +13,13 @@ management:
   endpoints:
     web:
       exposure:
-        #¼ÓÔØËùÓĞµÄ¶Ëµã£¬Ä¬ÈÏÖ»¼ÓÔØÁËinfo¡¢health
+        #åŠ è½½æ‰€æœ‰çš„ç«¯ç‚¹ï¼Œé»˜è®¤åªåŠ è½½äº†infoã€health
         include: '*'
   endpoint:
     refresh:
       enabled: true
     health:
       show-details: always
-    #¿ÉÒÔ¹Ø±ÕÖ¸¶¨µÄ¶Ëµã
+    #å¯ä»¥å…³é—­æŒ‡å®šçš„ç«¯ç‚¹
     shutdown:
       enabled: false
-
